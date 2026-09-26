@@ -47,7 +47,7 @@ header.divider {
 .hero {
   text-align: center;
   padding: 5rem 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/tent.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/tent.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
