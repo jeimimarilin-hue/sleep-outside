@@ -14,25 +14,156 @@
     </div>
   </header>
 
-  <main class="divider">
+  <main>
+    <!-- Hero Section -->
     <section class="hero">
       <h2>Welcome to Sleep <span class="highlight">Outside 🏕️</span></h2>
       <p>Your destination for top-quality camping gear.</p>
     </section>
     
-    <!-- Search Bar Feature -->
-    <section class="search-section">
-      <h3>Find Your Gear</h3>
-      <div class="search-box">
-        <input type="text" id="search-input" placeholder="Search for tents, sleeping bags, backpacks...">
+    <!-- Animated Tents Marquee Showcase (Tents Carousel) -->
+    <section class="tent-marquee-section">
+      <h3>Featured Tents Showcase</h3>
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- Tent Block 1 -->
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside1.jpg" alt="Tent 1">
+            <span>Rimrock 2</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside2.jpg" alt="Tent 2">
+            <span>Marmot Ajax 3</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside3.jpg" alt="Tent 3">
+            <span>Alpine 3</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside4.jpg" alt="Tent 4">
+            <span>Talus 4</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside5.jpg" alt="Tent 5">
+            <span>Realm 2</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside6.jpg" alt="Tent 6">
+            <span>Rimrock 6-Person</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside7.jpg" alt="Tent 7">
+            <span>Alpine Guide 3</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside8.jpg" alt="Tent 8">
+            <span>Rimrock 2-Person</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside9.jpg" alt="Tent 9">
+            <span>Talus 3-Person</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside10.jpg" alt="Tent 10">
+            <span>Sun Shade</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside11.jpg" alt="Tent 11">
+            <span>Ballyhoo 2</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside12.jpg" alt="Tent 12">
+            <span>5-Person Tent</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside13.jpg" alt="Tent 13">
+            <span>Pop-Up System</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside14.jpg" alt="Tent 14">
+            <span>Tent Footprint</span>
+          </div>
+          
+          <!-- Tent Block 2 (Duplicated for a seamless infinite loop) -->
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside1.jpg" alt="Tent 1">
+            <span>Rimrock 2</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside2.jpg" alt="Tent 2">
+            <span>Marmot Ajax 3</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside3.jpg" alt="Tent 3">
+            <span>Alpine 3</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside4.jpg" alt="Tent 4">
+            <span>Talus 4</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside5.jpg" alt="Tent 5">
+            <span>Realm 2</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside6.jpg" alt="Tent 6">
+            <span>Rimrock 6-Person</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside7.jpg" alt="Tent 7">
+            <span>Alpine Guide 3</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside8.jpg" alt="Tent 8">
+            <span>Rimrock 2-Person</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside9.jpg" alt="Tent 9">
+            <span>Talus 3-Person</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside10.jpg" alt="Tent 10">
+            <span>Sun Shade</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside11.jpg" alt="Tent 11">
+            <span>Ballyhoo 2</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside12.jpg" alt="Tent 12">
+            <span>5-Person Tent</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside13.jpg" alt="Tent 13">
+            <span>Pop-Up System</span>
+          </div>
+          <div class="marquee-item">
+            <img src="./images/tent_sleep_outside14.jpg" alt="Tent 14">
+            <span>Tent Footprint</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Dynamic Product Grid -->
-    <section class="products-section">
-      <h3>Featured Products</h3>
-      <div class="product-grid" id="product-grid"></div>
-      <p id="no-results" class="no-results" style="display: none;">No products found matching your search.</p>
+    <!-- Camping Trip Cost Calculator -->
+    <section class="calculator-section">
+      <h3>Camping Trip Cost Calculator</h3>
+      <form id="budget-form">
+        <div class="calc-field">
+          <label for="days">Number of Camping Days:</label>
+          <input type="number" id="days" min="1" required placeholder="e.g., 3">
+        </div>
+        <div class="calc-field">
+          <label for="people">Number of People:</label>
+          <input type="number" id="people" min="1" required placeholder="e.g., 2">
+        </div>
+        <div class="calc-field">
+          <label for="gear-rental">Extra Gear Rental Cost ($):</label>
+          <input type="number" id="gear-rental" min="0" value="0">
+        </div>
+        <button type="submit" id="calculate-btn">Calculate Cost</button>
+      </form>
+      <p id="total-output"></p>
     </section>
 
     <!-- Newsletter Subscription Form -->
