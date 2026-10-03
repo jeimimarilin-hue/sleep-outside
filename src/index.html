@@ -12,21 +12,20 @@
       <img src="./images/logos/marmot-160x100.jpg" alt="Sleep Outside Logo">
       <a href="/index.html">Sleep <span class="highlight">Outside 🏕️</span></a>
     </div>
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
   </header>
 
-  <main>
-    <!-- Hero Section -->
+  <main class="divider">
     <section class="hero">
       <h2>Welcome to Sleep <span class="highlight">Outside 🏕️</span></h2>
       <p>Your destination for top-quality camping gear.</p>
     </section>
     
-    <!-- Animated Tents Marquee Showcase (Tents Carousel) -->
+    <!-- Animated Tents Marquee Showcase -->
     <section class="tent-marquee-section">
       <h3>Featured Tents Showcase</h3>
       <div class="marquee-container">
         <div class="marquee-track">
-          <!-- Tent Block 1 -->
           <div class="marquee-item">
             <img src="./images/tent_sleep_outside1.jpg" alt="Tent 1">
             <span>Rimrock 2</span>
@@ -84,7 +83,6 @@
             <span>Tent Footprint</span>
           </div>
           
-          <!-- Tent Block 2 (Duplicated for a seamless infinite loop) -->
           <div class="marquee-item">
             <img src="./images/tent_sleep_outside1.jpg" alt="Tent 1">
             <span>Rimrock 2</span>
@@ -145,6 +143,15 @@
       </div>
     </section>
 
+    <!-- Search Bar Feature -->
+    <section class="search-section">
+      <h3>Find Your Gear</h3>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search for tents, sleeping bags, backpacks...">
+      </div>
+    </section>
+
+    <!-- Dynamic Product Grid -->
     <section class="products-section">
       <h3>Featured Products</h3>
       <div class="product-grid" id="product-grid"></div>

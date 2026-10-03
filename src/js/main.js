@@ -7,7 +7,6 @@ const productGrid = document.getElementById('product-grid');
 const noResults = document.getElementById('no-results');
 const newsletterForm = document.getElementById('newsletter-form');
 
-// 1. Fetch products from the API
 async function fetchProducts() {
   try {
     const response = await fetch(API_URL);
@@ -25,7 +24,6 @@ async function fetchProducts() {
   }
 }
 
-// 2. Dynamically render the product grid
 function renderProducts(productList) {
   if (!productGrid) return;
 
@@ -58,7 +56,6 @@ function renderProducts(productList) {
   });
 }
 
-// 3. Real-time search filter
 if (searchInput) {
   searchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase().trim();
@@ -73,7 +70,6 @@ if (searchInput) {
   });
 }
 
-// 4. Camping trip cost calculator logic
 function setupCalculator() {
   const form = document.getElementById('budget-form');
   const output = document.getElementById('total-output');
@@ -97,7 +93,33 @@ function setupCalculator() {
   });
 }
 
-// 5. Newsletter subscription handling
+function setupDarkMode() {
+  const toggleBtn = document.getElementById('dark-mode-toggle');
+  const body = document.body;
+
+  if (!toggleBtn) return;
+
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'dark') {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️ Light Mode';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    let theme = 'light';
+    if (body.classList.contains('dark-mode')) {
+      theme = 'dark';
+      toggleBtn.textContent = '☀️ Light Mode';
+    } else {
+      toggleBtn.textContent = '🌙 Dark Mode';
+    }
+    
+    localStorage.setItem('theme', theme);
+  });
+}
+
 if (newsletterForm) {
   newsletterForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -109,8 +131,8 @@ if (newsletterForm) {
   });
 }
 
-// Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
   fetchProducts();
   setupCalculator();
+  setupDarkMode();
 });
